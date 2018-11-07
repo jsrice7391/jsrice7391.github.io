@@ -1,0 +1,92 @@
+
+<!-- Modal Structure -->
+<div id="modal1" class="modal">
+    <div class="modal-content">
+        <h4>Add a Note</h4>
+        <hr>
+        <form action="/notes" id="usrform" method="POST">
+        <div class="row">
+            <lebel for="article">Article:</lebel>
+            <input type="text" value="{{article.title}}" class="field left" name="article" readonly>
+            <div class="input-field col s12">
+                <textarea id="textarea1" class="materialize-textarea" name="note"></textarea>
+                <label for="textarea1">Textarea</label>
+               
+            </div>
+        </div>
+            <input type="submit" >
+        </form>
+
+    </div>
+    <div class="modal-footer">
+        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+    </div>
+</div>
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col s12 m12">
+            <div class="card">
+                <div class="card-image">
+                    <img src="/public/images/reader.jpg">
+
+
+                    <ul id="articleDrop">
+                        <li>
+                            <a class="btn-floating red darken-1 modal-trigger" href="#modal1" data-target="modal">
+                                <i class="material-icons">edit</i>
+                            </a>
+                        </li>
+
+                        {{#if article.saved}}
+                        <li>
+                            <a class="btn-floating blue unSaver" elementId={{article._id}}>
+                                <i class="material-icons">check</i>
+                            </a>
+                        </li>
+                        {{else}}
+                        <li>
+                            <a class="btn-floating green darken-1 saver" elementId={{article._id}}>
+                                <i class="material-icons">save</i>
+                            </a>
+                        </li>
+                        {{/if}}
+                    </ul>
+
+
+
+                </div>
+                <div class="card-content">
+                    <a href="http://www.vice.com{{article.link}}"><span class="card-title">{{article.title}}</span></a>
+                    <p>{{article.subText}}</p>
+                    <hr>
+                     {{#each article.notes}}
+                     <div class="row">
+                         <div class="container">
+                            <div class="comment">
+                                <p>"{{text}}"</p>  
+                                <a class="halfway-fab waves-effect waves-light red btn commentDelete" elementId="{{id}}" >
+                                    <i class="material-icons">delete</i>
+                                </a>
+                              
+                            
+                            </div>
+                         </div> 
+                    </div>
+                  
+                    {{else}}
+                    <p class="empty">No content</p>
+                    {{/each}}
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    
+</div>
+

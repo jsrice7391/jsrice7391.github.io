@@ -1,0 +1,12 @@
+[submodule "geo_quiz"]
+	path = geo_quiz
+	url = https://github.com/jsrice7391/geo_quiz.git
+[submodule "hangman"]
+	path = hangman
+	url = https://github.com/jsrice7391/hangman.git
+[submodule "viceScraper"]
+	path = viceScraper
+	url = https://github.com/jsrice7391/viceScraper.git
+[submodule "techNewsReactApp"]
+	path = techNewsReactApp
+	url = https://github.com/jsrice7391/techNewsReactApp.git

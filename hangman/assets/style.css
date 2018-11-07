@@ -1,0 +1,61 @@
+h1,
+h2 {
+    text-align: center;
+    color: white
+}
+
+body {
+    background-image: url("dark-triangles.png");
+    font-family: 'Oswald', sans-serif;
+}
+
+p {
+    color: white;
+}
+
+#play_again {
+    float: right;
+    margin-right: 45%;
+    padding: 20px;
+    background-color: lightgreen;
+}
+
+#blanks_list ul {
+    display: inline-block;
+}
+
+.inline {
+    display: inline-block;
+    margin: 2%;
+    width: 2%;
+    border-bottom: 5px solid red;
+    text-align: center;
+}
+
+.space {
+    display: inline-block;
+    margin: 2%;
+    width: 2%;
+    border-bottom: 5px solid green;
+    text-align: center;
+}
+
+.show {
+    display: inline;
+}
+
+#winner {
+    color: red;
+}
+
+.stately {
+    width: 400px;
+    font-size: 400px;
+    clear: both;
+}
+
+.stately .va,
+.stately .md,
+.stately .dc {
+    color: #FF0000;
+}

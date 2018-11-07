@@ -1,0 +1,23 @@
+
+<h1 class="center-align">Saved Articles</h1>
+
+<div class="container">
+
+
+    <div class="row">
+         {{#each articles}}
+        <div class="col s12 m6 left">
+            <div class="card menuCard blue darken-1">
+                <div class="card-content white-text">
+                   <a href="/article/{{title}}"><span class="card-title">{{title}}</span></a>
+                    <p>{{subText}}</p>
+                </div>
+                <div class="card-action">
+                </div>
+            </div>
+        </div>
+         {{/each}}
+    </div>
+
+
+</div>

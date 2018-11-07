@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+{{!-- Load Jquery CDN --}}
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Compiled and minified CSS  for Materialize-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    
+    <!-- Compiled and minified JavaScript for Materialize-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+
+
+
+{{!-- Load the Material Icons --}}
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+{{!-- Load my CSS  --}}
+    <link href="/public/main.css" rel="stylesheet">
+
+
+
+    <title>Vice Scraper</title>
+</head>
+<body>
+    <!-- Modal Structure -->
+    <div id="articleModal" class="modal">
+        <div class="modal-content">
+            <h4 id="articleCount"></h4>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">CLOSE </a>
+        </div>
+    </div>
+
+    
+    <nav>
+        <div class="container">
+        <div class="nav-wrapper">
+            <a href="/" class="brand-logo">WebScraper</a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse">
+                <i class="material-icons">menu</i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+        
+                <li>
+                    <a href="/saved">Saved</a>
+                </li>
+                <li>
+                    <a href="#articleModal" data-target="articleModal" class="waves-effect waves-light btn modal-trigger">Scrape for articles</a>
+                </li>
+            </ul>
+            <ul class="side-nav" id="mobile-demo">
+          
+                <li>
+                    <a href="/saved">Saved</a>
+                </li>
+                <li>
+                    <a  href="#articleModal" data-target="articleModal" class="modal-action modal-close waves-effect waves-green btn-flat">Scrape for articles</a>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+
+
+    {{{body}}}
+
+
+{{!-- Load The UI side of the application --}}
+    <script src="/public/ui.js"></script>
+    
+</body>
+</html>
