@@ -22,6 +22,11 @@ function buildBoxes(theArray, div) {
 $(document).ready(function () {
     $(".button-collapse").sideNav();
 
+$.get("https://api.medium.com/v1/users/jsrice7391/publications", (data)=>{
+    console.log(data)
+});
+
+
     $.get("https://api.github.com/users/jsrice7391/repos", {
         sort: "updated"
     }, (data) => {
