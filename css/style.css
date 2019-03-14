@@ -103,6 +103,7 @@ nav {
 
 .aboutContainer {
     background: url("../bg2.jpg") no-repeat center center;
+    background-size: cover;
     height: 600px;
     margin: 0;
     margin-top: -30px;
@@ -206,7 +207,7 @@ p {
 
 }
 
-.cardHeight{
+.cardHeight {
     height: 175px;
 }
 
@@ -263,15 +264,19 @@ p {
     #bio p {
         font-size: 30px;
     }
+
     h3 {
         font-size: 36px;
     }
+
     p {
         font-size: 24px;
     }
+
     h4 {
         font-size: 40px;
     }
+
     nav {
         height: 100px;
     }
